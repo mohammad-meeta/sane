@@ -1,17 +1,17 @@
-import HomeController from "@BE/Controllers/home-controller";
+import AuthController from "@BE/Controllers/auth-controller";
 import BaseRouter from "@Core/Helpers/base-router-helper";
 
 /**
  * Home router
  */
 export default class HomeRoute extends BaseRouter {
-    private homeController: HomeController = new HomeController();
+    private authController: AuthController = new AuthController();
 
     /**
      * Constructor
      */
     constructor() {
-        super("", "HomeRoute");
+        super("/auth", "AuthRoute");
         this.defineRoutes();
     }
 
@@ -19,6 +19,6 @@ export default class HomeRoute extends BaseRouter {
      * Define routes
      */
     private defineRoutes(): void {
-        super.get("/", [this.homeController.index], "home.index");
+        super.get("/login", [this.authController.login], "auth.login");
     }
 }

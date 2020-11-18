@@ -1,4 +1,10 @@
+@import "~bulma/bulma";
+
 html {
-  padding: 3em;
-  background-color: yellow;
+    direction: rtl;
+}
+
+body {
+    font-family: tahoma;
+    background: #f7f7f7;
 }

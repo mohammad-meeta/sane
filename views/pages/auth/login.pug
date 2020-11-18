@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        //- link(rel="stylesheet", href=Helper.mix("css/global/app.css"))
+        link(rel='stylesheet' href=Helper.mix('styles/app.css'))
+        script(defer src=Helper.mix('scripts/app.js'))
+    body
+        #app.section
+            login
+        script(defer, src=Helper.mix('scripts/app/pages/auth/login.js'))
