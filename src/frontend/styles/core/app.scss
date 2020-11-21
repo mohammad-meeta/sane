@@ -1,0 +1,18 @@
+@import "~bulma/bulma";
+
+/* Core components */
+@import "./fonts.scss";
+
+/* TEST */
+html {
+  direction: rtl;
+}
+
+body {
+  font-family: tahoma;
+  background: #f7f7f7;
+}
+
+.login-container {
+  background: lightblue url("@IMAGES/log-in-plan.png");
+}
